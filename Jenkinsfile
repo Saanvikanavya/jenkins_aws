@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
+                docker build -t my-flask-image:latest
             }
         }
         stage('Test') {
