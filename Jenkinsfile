@@ -13,7 +13,7 @@ pipeline {
     }
     stage('Deploy') {
       steps {
-        sh 'docker run -p 5000:5000 my-flask-image'
+        sh 'docker run -d -p 5000:5000 my-flask-image'
       }
     }
   }
